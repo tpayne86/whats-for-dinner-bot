@@ -11,3 +11,5 @@
 .pnp.*
 
 .vscode
+**/config.json
+dist/
