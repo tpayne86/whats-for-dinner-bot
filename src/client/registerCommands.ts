@@ -8,6 +8,7 @@ export const registerCommands = (commands: Map<string,Command>) => {
   const commandsToRegister = Array.from(commands.values()).map((command) => {
     return command.data?.toJSON();
   })
+  console.log(Config.discordConfig.token)
   const rest = new REST({ version: '9' }).setToken(Config.discordConfig.token);
 
   rest.put(Routes.applicationGuildCommands(Config.discordConfig.clientId, Config.discordConfig.guildId), {body: commandsToRegister})
