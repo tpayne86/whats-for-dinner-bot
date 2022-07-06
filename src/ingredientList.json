@@ -1,0 +1,96 @@
+{
+  "ingredients": [
+    {
+      "item": "Brandy",
+      "type": "spirit"
+    },
+    {
+      "item": "Spiced Rum",
+      "type": "spirit"
+    },
+    {
+      "item": "Gin",
+      "type": "spirit"
+    },
+    {
+      "item": "Rum",
+      "type": "spirit"
+    },
+    {
+      "item": "Tequila",
+      "type": "spirit"
+    },
+    {
+      "item": "Vodka",
+      "type": "spirit"
+    },
+    {
+      "item": "Whisky",
+      "type": "spirit"
+    },
+    {
+      "item": "White Rum",
+      "type": "spirit"
+    },
+    {
+      "item": "Triple Sec",
+      "type": "liqueur"
+    },
+    {
+      "item": "Amaretto",
+      "type": "liqueur"
+    },
+    {
+      "item": "Bailey's Irish Cream",
+      "type": "liqueur"
+    },
+    {
+      "item": "Blue Curacao",
+      "type": "liqueur"
+    },
+    {
+      "item": "Kahlua",
+      "type": "liqueur"
+    },
+    {
+      "item": "Champagne",
+      "type": "wine champagne"
+    },
+    {
+      "item": "Red Wine",
+      "type": "wine champagne"
+    },
+    {
+      "item": "Sherry",
+      "type": "wine champagne"
+    },
+    {
+      "item": "Sweet Vermouth",
+      "type": "wine champagne"
+    },
+    {
+      "item": "Vermouth",
+      "type": "wine champagne"
+    },
+    {
+      "item": "White Wine",
+      "type": "wine champagne"
+    },
+    {
+      "item": "Apple Cider",
+      "type": "beer and ciders"
+    },
+    {
+      "item": "Guinness",
+      "type": "beer and ciders"
+    },
+    {
+      "item": "Ginger Beer",
+      "type": "beer and ciders"
+    },
+    {
+      "item": "Ale",
+      "type": "beer and ciders"
+    }
+  ]
+}

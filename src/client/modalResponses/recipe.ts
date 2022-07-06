@@ -1,6 +1,6 @@
-import {Client, MessageEmbed} from "discord.js";
-import {Modal, ModalSubmitInteraction} from 'discord-modals';
-import { recipeApiId, recipeApiKey } from "../../config.json"
+import { Client, MessageEmbed} from "discord.js";
+import { ModalSubmitInteraction} from 'discord-modals';
+import config from "../../config"
 import axios from "axios";
 
 
@@ -9,7 +9,7 @@ export default {
   run: async (client: Client, modal: ModalSubmitInteraction) => {
     const meatResponse = modal.getSelectMenuValues('meat-select');
 
-    const axiosResp = await axios.get(`https://api.edamam.com/api/recipes/v2?type=public&q=${meatResponse}&app_id=${recipeApiId}&app_key=${recipeApiKey}&random=true`)
+    const axiosResp = await axios.get(`https://api.edamam.com/api/recipes/v2?type=public&q=${meatResponse}&app_id=${config.edamamApiConfig.clientId}&app_key=${config.edamamApiConfig.token}&random=true`)
     const randRecipe = axiosResp.data.hits[0].recipe;
 
     const recipeEmbed = new MessageEmbed()
