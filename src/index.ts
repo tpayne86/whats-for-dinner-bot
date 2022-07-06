@@ -6,7 +6,7 @@ import 'dotenv/config';
 // @ts-ignore
 import config from './config';
 
-const discordClient = new DiscordClient({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]}, config.token);
+const discordClient = new DiscordClient({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]}, config.discordConfig.token);
 
 discordClient.login();
 

@@ -1,16 +1,16 @@
 import {Command} from "../DiscordClient";
 
-const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord-api-types/v9');
-const { clientId, guildId, token } = require('../config');
+import { REST } from '@discordjs/rest';
+import { Routes } from 'discord-api-types/v9';
+import Config from '../config'
 
 export const registerCommands = (commands: Map<string,Command>) => {
   const commandsToRegister = Array.from(commands.values()).map((command) => {
     return command.data?.toJSON();
   })
-  const rest = new REST({ version: '9' }).setToken(token);
+  const rest = new REST({ version: '9' }).setToken(Config.discordConfig.token);
 
-  rest.put(Routes.applicationGuildCommands(clientId, guildId), {body: commandsToRegister})
+  rest.put(Routes.applicationGuildCommands(Config.discordConfig.clientId, Config.discordConfig.guildId), {body: commandsToRegister})
     .then(() => console.log('Successfully registered application commands'))
     .catch(console.error);
 }
